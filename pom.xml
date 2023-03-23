@@ -16,12 +16,13 @@
         <geeklazy-dependencies.version>1.0-SNAPSHOT</geeklazy-dependencies.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <groupId>com.geeklazy</groupId>
     <artifactId>geeklazy-family</artifactId>
     <packaging>pom</packaging>
-    <version>${geeklazy.version}</version>
+    <version>${revision}</version>
 
     <modules>
         <module>geeklazy-core</module>
