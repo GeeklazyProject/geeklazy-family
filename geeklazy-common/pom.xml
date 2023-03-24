@@ -9,12 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>geeklazy-starter</artifactId>
+    <artifactId>geeklazy-common</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>geeklazy-starter-result-restful</module>
-        <module>geeklazy-starter-result</module>
-        <module>geeklazy-starter-filesystem</module>
+        <module>geeklazy-common-utils</module>
     </modules>
 
     <properties>

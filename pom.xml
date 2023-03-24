@@ -12,7 +12,7 @@
 
     <properties>
         <revision>1.0-SNAPSHOT</revision>
-        <geeklazy.version>${revision}</geeklazy.version>
+        <geeklazy.version>1.0-SNAPSHOT</geeklazy.version>
         <geeklazy-dependencies.version>1.0-SNAPSHOT</geeklazy-dependencies.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -30,6 +30,8 @@
         <module>geeklazy-starter</module>
         <module>geeklazy-demo</module>
         <module>geeklazy-exception</module>
+        <module>geeklazy-common</module>
+        <module>geeklazy-filesystem</module>
     </modules>
 
     <dependencies>
