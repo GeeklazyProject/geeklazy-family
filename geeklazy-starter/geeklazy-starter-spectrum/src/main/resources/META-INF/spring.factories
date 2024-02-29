@@ -1,0 +1,2 @@
+org.springframework.boot.SpringApplicationRunListener=\
+  com.geeklazy.frame.starter.spectrum.listener.SpectrumAutoConfigurationRunListener

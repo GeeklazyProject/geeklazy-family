@@ -26,14 +26,14 @@ public class EmptyUtils {
         if (obj instanceof Number)
             return false;
 
-        if (obj instanceof String && obj.toString().length() == 0)
-            return true;
+        if (obj instanceof String)
+            return obj.toString().length() == 0;
 
-        if (obj.getClass().isArray() && Array.getLength(obj) == 0)
-            return true;
+        if (obj.getClass().isArray())
+            return Array.getLength(obj) == 0;
 
-        if (obj instanceof Collection && ((Collection<?>) obj).isEmpty())
-            return true;
+        if (obj instanceof Collection)
+            return ((Collection<?>) obj).isEmpty();
 
         return obj instanceof Map && ((Map<?, ?>) obj).isEmpty();
     }

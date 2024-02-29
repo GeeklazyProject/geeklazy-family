@@ -25,6 +25,7 @@ public class GlobalExceptionHandler {
 	 */
 	@ExceptionHandler(value = BizException.class)
 	public Object bizExceptionHandler(BizException e) {
+		e.printStackTrace();
 		RestfulResult<String> restfulResult = new RestfulResult<>();
 		restfulResult.setCode(e.getBizCode());
 		restfulResult.setMessage(e.getMessage());
@@ -38,6 +39,7 @@ public class GlobalExceptionHandler {
 	 */
 	@ExceptionHandler(value = Exception.class)
 	public Object defaultExceptionHandler(Exception e) {
+		e.printStackTrace();
 		RestfulResult<String> restfulResult = new RestfulResult<>();
 		restfulResult.setMessage(e.getMessage());
 		return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(restfulResult);

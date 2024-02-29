@@ -27,9 +27,11 @@ public class ResultFormatAspect {
         Signature sig = proceedingJoinPoint.getSignature();// 获取目标签名
 
         // 判断是否方法签名
-        if (!(sig instanceof MethodSignature msig)) {// 否
+        if (!(sig instanceof MethodSignature)) {// 否
             throw new IllegalArgumentException("该注解只能用于方法");
         }
+
+        MethodSignature msig = (MethodSignature) sig;// 转换
 
         Object target = proceedingJoinPoint.getTarget();// 获取目标对象
         Method currentMethod = target.getClass().getMethod(msig.getName(), msig.getParameterTypes());// 获取注解方法对象

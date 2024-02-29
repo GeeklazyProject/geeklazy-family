@@ -6,10 +6,11 @@
         <artifactId>geeklazy-family</artifactId>
         <groupId>com.geeklazy</groupId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>geeklazy-filesystem</artifactId>
+    <artifactId>geeklazy-starter-jpa</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -18,9 +19,14 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.aliyun.oss</groupId>
-            <artifactId>aliyun-sdk-oss</artifactId>
-            <version>3.15.0</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <!-- 支持JSON数据库类型 -->
+        <dependency>
+            <groupId>com.vladmihalcea</groupId>
+            <artifactId>hibernate-types-52</artifactId>
+            <version>2.4.1</version>
         </dependency>
     </dependencies>
 </project>

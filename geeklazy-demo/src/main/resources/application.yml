@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: ${database.url}
+    username: ${database.username}
+    password: ${database.password}
+  flyway:
+    table: my_shcema
+    baseline-on-migrate: true
+    baseline-version: 0
+#    enabled: true
+#    url: ${database.url}
+#    user: ${database.username}
+#    password: ${database.password}
