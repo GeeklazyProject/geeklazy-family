@@ -14,8 +14,8 @@
         <revision>1.0-SNAPSHOT</revision>
         <geeklazy.version>1.0-SNAPSHOT</geeklazy.version>
         <geeklazy-dependencies.version>1.0-SNAPSHOT</geeklazy-dependencies.version>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -32,7 +32,7 @@
         <module>geeklazy-exception</module>
         <module>geeklazy-common</module>
         <module>geeklazy-filesystem</module>
-        <module>geeklazy-starter/geeklazy-starter-jpa</module>
+        <module>geeklazy-pom</module>
     </modules>
 
     <dependencies>
